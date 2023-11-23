@@ -13,8 +13,8 @@ class Curso extends Model
     protected $fillable = array("*"); //all the fields in the table
 
     //method that returns the list of students that a course has
-    public function estudiantes(){
-        return $this->belongsToMany(Estudiante::class,"curso_estudiante");
+    public function estudiantes()
+    {
+        return $this->belongsToMany(Estudiante::class, "curso_estudiante");
     }
-    public $timestamps = true;
 }
